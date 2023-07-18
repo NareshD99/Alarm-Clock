@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm</title>
+    <link rel="stylesheet" href="Alarm.css">
+</head>
+<body>
+    <div class="AlarmTimer">
+        
+        <div id="CurrentTimeDisplay"></div>
+        <div class="AlarmContainer">
+            <!-- List of inputs -->
+            <div class="inputSetTime">
+                <input type="number" id="input-hour" placeholder="00" min="00" max="12">
+                <input type="number" id="input-minute" placeholder="00" min="00" max="59">
+                <input type="number" id="input-second" placeholder="00" min="00" max="59">
+                <!-- input meridian(AM/PM) -->
+                <select id="meridiem">
+                    <option value="AM">AM</option>
+                    <option value="PM">PM</option>
+                </select>
+                <button id="set-time">Set Time</button>
+                <!-- list od alarms -->
+                <div class="acitveAlarms">
+                    <h2>Alarms List</h2>
+                    <ul id="alarms">
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <script src="AlarmJS.js"></script>
+    
+</body>
+</html>
